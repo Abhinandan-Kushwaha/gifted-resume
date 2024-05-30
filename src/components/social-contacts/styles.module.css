@@ -1,0 +1,9 @@
+.social {
+  display: flex;
+}
+
+.icon {
+  height: 30px;
+  width: 35px;
+  margin-right: 10px;
+}

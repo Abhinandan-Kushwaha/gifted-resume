@@ -1,0 +1,26 @@
+.bar {
+  height: 12px;
+  border-radius: 6px;
+  background-color: #013d74;
+}
+
+.textSkill {
+  color: gray;
+  font-size: 15px;
+}
+
+.dropdown {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: -30px;
+  background-color: #ddf;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.dropdownItem {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
