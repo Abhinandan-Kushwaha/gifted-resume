@@ -1,0 +1,106 @@
+body{
+    width:900px;
+    margin:50px;
+    color: #242424;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.title{
+    color:#013D74;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: 18px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    flex:0.6;
+    /* background-color: red; */
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    /* background-color: green; */
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.icon{
+    height: 30px;
+    width: 35px;
+    margin-right: 10px;
+}
+.headerText{
+    font-size: 22px;
+    font-weight: bold;
+    color: #013D74;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mainBody{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.bodyLeft{
+    flex:0.2
+}
+.bodyRight{
+    flex:0.79
+}
+.bodyLeft{
+    font-size: 18px;
+    font-weight: bold;
+}
+.subTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.subTitleSkill{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+.subText{
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+ul{
+
+}
+li{
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+a{
+    color: rgb(1, 95, 133);
+}
+.rightText{
+    margin-bottom: 20px;
+}
+.social{
+    display: flex;
+}
+.bar{
+    height: 12px;
+    border-radius: 6px;
+    background-color: #013D74;
+}
+.textSkill{
+    text-align: center;
+}
