@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gifted-resume/static/css/main.84c05294.css",
-    "main.js": "/gifted-resume/static/js/main.581f9787.js",
+    "main.css": "/gifted-resume/static/css/main.268e6485.css",
+    "main.js": "/gifted-resume/static/js/main.af607e0b.js",
     "static/js/453.a4a73234.chunk.js": "/gifted-resume/static/js/453.a4a73234.chunk.js",
     "static/media/npm.jpg": "/gifted-resume/static/media/npm.54da432772ef4200f855.jpg",
     "index.html": "/gifted-resume/index.html",
-    "main.84c05294.css.map": "/gifted-resume/static/css/main.84c05294.css.map",
-    "main.581f9787.js.map": "/gifted-resume/static/js/main.581f9787.js.map",
+    "main.268e6485.css.map": "/gifted-resume/static/css/main.268e6485.css.map",
+    "main.af607e0b.js.map": "/gifted-resume/static/js/main.af607e0b.js.map",
     "453.a4a73234.chunk.js.map": "/gifted-resume/static/js/453.a4a73234.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84c05294.css",
-    "static/js/main.581f9787.js"
+    "static/css/main.268e6485.css",
+    "static/js/main.af607e0b.js"
   ]
 }
