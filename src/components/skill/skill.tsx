@@ -67,7 +67,9 @@ export const Skill = (props: SkillProps) => {
         style={{ width: getBarWidth(localLevel) }}
         onClick={onBarClick}
       />
-      <div className={styles.textSkill}>{localLevel}</div>
+      <div className={styles.textSkill} onClick={onBarClick}>
+        {localLevel}
+      </div>
       {dropdownVisible ? (
         <div className={styles.dropdown}>
           <>

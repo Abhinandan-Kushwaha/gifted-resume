@@ -2,11 +2,13 @@
   height: 12px;
   border-radius: 6px;
   background-color: #013d74;
+  cursor: pointer;
 }
 
 .textSkill {
   color: gray;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .dropdown {
