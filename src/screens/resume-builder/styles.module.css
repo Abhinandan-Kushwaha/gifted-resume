@@ -82,3 +82,11 @@ a {
 .rightText {
   margin-bottom: 20px;
 }
+
+.deleteIcon {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  height: 20px;
+  width: 20px;
+}

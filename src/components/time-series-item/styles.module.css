@@ -8,3 +8,11 @@
 .bodyRight {
   flex: 0.79;
 }
+
+.deleteIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+}

@@ -5,10 +5,13 @@ import styles from './styles.module.css'
 
 interface ITimeSeriesItemProps {
   timeSeriesItem: ITimeSeriesItem
+  items: ITimeSeriesItem[]
+  setItems: Function
+  index: number
 }
 
 export const TimeSeriesItem = (props: ITimeSeriesItemProps) => {
-  const { timeSeriesItem } = props
+  const { timeSeriesItem, items, setItems, index } = props
   const { dateRange, desigOrDegree, institute, details } = timeSeriesItem
   const [hovered, setHovered] = useState(false)
 
@@ -18,6 +21,18 @@ export const TimeSeriesItem = (props: ITimeSeriesItemProps) => {
   const onMouseLeave = () => {
     setHovered(false)
   }
+
+  const onCrossClicked = (detailIndex: number) => {
+    setHovered(false)
+    let newItems: ITimeSeriesItem[] = JSON.parse(JSON.stringify(items))
+    if (newItems[index].details) {
+      const a1 = newItems[index].details?.slice(0, detailIndex) ?? []
+      const a2 = newItems[index].details?.slice(detailIndex + 1) ?? []
+      newItems[index].details = a1.concat(a2)
+      setItems(newItems)
+    }
+  }
+
   return (
     <div
       className={styles.mainBody}
@@ -46,17 +61,26 @@ export const TimeSeriesItem = (props: ITimeSeriesItemProps) => {
         />
         <ul>
           {details
-            ? details.map((detailItem) => {
+            ? details.map((detailItem, detailIndex) => {
                 return (
                   <>
                     {detailItem ? (
-                      <li>
+                      <li style={{ position: 'relative' }}>
                         <EditableText
                           text={detailItem}
                           textType={TextType.none}
                           rows={3}
                           cols={44}
                         />
+                        {hovered ? (
+                          <img
+                            src={require('../../assets/images/delete.png')}
+                            className={styles.deleteIcon}
+                            onClick={() => onCrossClicked(detailIndex)}
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
+                          />
+                        ) : null}
                       </li>
                     ) : null}
                   </>

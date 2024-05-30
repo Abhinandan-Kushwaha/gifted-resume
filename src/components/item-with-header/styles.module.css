@@ -4,3 +4,11 @@
   margin-top: 6px;
   margin-bottom: 6px;
 }
+
+.deleteIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 20x;
+  width: 2px;
+}

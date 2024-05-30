@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 import { EditableText } from '../../components/editable-text/EditableText'
 import { TextType } from '../../types/global-types'
 import { defaultTextValues } from './const'
-import { LeftSide } from './leftSide'
+import { LeftSide } from './left-side/leftSide'
 import { RightSide } from './rightSide'
 
 export const ResumeBuilder = () => {
